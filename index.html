@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre mi - Leonardo Henao</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="about_me">
+      <h1>Sobre mi</h1>
+      <h2>Desarrollador Web</h2>
+      <div class="about_me-info">
+        <img src="./images/photo__.webp" alt="Foto de Leonardo Henao" />
+        <p>
+          ¡Hola! Soy Leonardo Henao, un desarrollador de software de Cali -
+          Colombia, enfocado en el frontend aunque con bastantes conocimientos
+          en el backend. Apasionado por aportar y aprender lo máximo posible en
+          todos los proyectos que participo.
+        </p>
+      </div>
+      <ul class="about_me-social">
+        <li>
+          <a href="https://www.linkedin.com/in/leonardo-henao/" target="_blank"
+            >Linkedin</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/leonardo-henao" target="_blank">Github</a>
+        </li>
+      </ul>
+    </section>
+    <section class="hobbies">
+      <h3>Pasatiempos</h3>
+      <ul>
+        <li>
+          <img src="./images/videojuegos.webp" alt="Videojuegos pasatiempo" />
+          <span> Videojuegos </span>
+        </li>
+        <li>
+          <img src="./images/programar.webp" alt="Programar pasatiempo" />
+          <span> Programar </span>
+        </li>
+        <li>
+          <img src="./images/ejercicio.webp" alt="Hacer ejercicio pasatiempo" />
+          <span> Hacer ejercicio </span>
+        </li>
+        <li>
+          <img src="./images/dormir.webp" alt="Descansar pasatiempo" />
+          <span> Descansar </span>
+        </li>
+      </ul>
+
+      <h3>Orden Pasatiempos</h3>
+      <article>
+        <table>
+          <thead>
+            <tr>
+              <td>Actividad</td>
+              <td>Lunes</td>
+              <td>Martes</td>
+              <td>Miércoles</td>
+              <td>Jueves</td>
+              <td>Viernes</td>
+              <td>Sábado</td>
+              <td>Domingo</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Videojuegos</td>
+              <td>No</td>
+              <td>No</td>
+              <td>Si</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>Si</td>
+            </tr>
+            <tr>
+              <td>Programar</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>Si</td>
+            </tr>
+            <tr>
+              <td>Hacer Ejercicio</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Descansar</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Si</td>
+              <td>Si</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+    <section class="contact">
+      <h3>Contacto</h3>
+      <form action="javascript:void(0);" onsubmit="sendFormContact(this)">
+        <div>
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Escribe tu nombre"
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Escribe tu email"
+          />
+        </div>
+        <div>
+          <label for="idea">Idea de proyecto</label>
+          <textarea
+            name="idea"
+            id="idea"
+            placeholder="Describe tu idea"
+          ></textarea>
+        </div>
+        <input type="submit" value="Contactar" />
+      </form>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

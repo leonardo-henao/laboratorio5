@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --cl-font: #212121;
+  --cl-background: #ddd7d7;
+  --shadow: 2px 2px 1px var(--cl-background), 4px 4px 1px var(--cl-font);
+}
+
+body {
+  background-color: var(--cl-background);
+  color: var(--cl-font);
+  font-family: "Outfit";
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-anton {
+  font-family: "Anton", sans-serif;
+}
+
+.about_me-social a,
+.hobbies ul li img,
+.hobbies ul li span,
+.contact input[type="submit"] {
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"],
+a {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  max-width: 1600px;
+}
+
+/* about me section */
+
+.about_me h1 {
+  font-family: "Anton";
+  font-size: 1.2rem;
+}
+
+.about_me-info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_me-info img {
+  width: 200px;
+}
+
+.about_me-info p {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.about_me-social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about_me-social a {
+  background-color: var(--cl-font);
+  color: var(--cl-background);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.about_me-social a:hover {
+  background-color: var(--cl-font);
+  color: var(--cl-background);
+
+  box-shadow: var(--shadow);
+}
+
+h3 {
+  font-family: "Anton";
+  opacity: 0.8;
+}
+
+/* hobbies section */
+
+.hobbies {
+  margin: 4rem 0;
+}
+.hobbies ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 45%);
+  grid-gap: 2rem;
+  justify-content: center;
+}
+.hobbies ul li {
+  position: relative;
+}
+
+.hobbies ul li img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.hobbies ul li span {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  background-color: var(--cl-background);
+  text-align: center;
+
+  font-family: "Anton";
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.hobbies ul li:hover span {
+  top: 40%;
+  background-color: transparent;
+  font-size: 2.5rem;
+}
+
+.hobbies ul li:hover img {
+  opacity: 0.6;
+}
+
+.hobbies article {
+  overflow-x: auto;
+}
+
+table {
+  margin: 2rem auto;
+  box-shadow: var(--shadow);
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid var(--cl-font);
+  padding: 0.5rem;
+}
+
+table thead {
+  background-color: var(--cl-font);
+  color: var(--cl-background);
+}
+
+/* contact section */
+.contact {
+  margin: 4rem 0;
+}
+.contact form {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.contact form input {
+  font-size: 1rem;
+}
+
+.contact form div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.contact form div label {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.contact input[type="submit"] {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--cl-font);
+  color: var(--cl-background);
+  margin-top: 2rem;
+  margin-left: auto;
+  display: block;
+}
+
+.contact input[type="submit"]:hover {
+  scale: 1.01;
+  box-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 600px) {
+  .about_me-info {
+    flex-wrap: wrap;
+  }
+
+  .hobbies ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
